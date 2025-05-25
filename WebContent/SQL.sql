@@ -1,0 +1,14 @@
+CREATE TABLE TestMysql_43451d0cd6.TM_REGISTER (
+	REGISTER_ID INT auto_increment NOT NULL,
+	S_ID varchar(100) NULL,
+	FIRST_NAME varchar(100) NULL,
+	SUR_NAME varchar(100) NULL,
+	GENDER varchar(100) NULL,
+	EMAIL varchar(100) NULL,
+	PHONE varchar(100) NULL,
+	USERNAME varchar(100) NULL,
+	PASSWORD varchar(100) NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
