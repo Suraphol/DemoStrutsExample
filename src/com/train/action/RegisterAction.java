@@ -1,5 +1,7 @@
 package com.train.action;
 
+import java.util.Objects;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -23,9 +25,14 @@ public class RegisterAction extends Action{
 		String forwardName = "form";
 		String cmd = request.getParameter("cmd");
 		if("submit".equals(cmd)) {
-			System.out.println("FirstName: "+registerForm.getFirstName());
-			System.out.println("SurName: "+registerForm.getSurName());
+//			System.out.println("FirstName: "+registerForm.getFirstName());
+//			System.out.println("SurName: "+registerForm.getSurName());
+//			System.out.print(request.getParameter("remak"));
 			
+			System.out.println(registerForm.toString());
+			
+			
+			registerForm.setCountCourse(Objects.toString(registerForm.getCourse().length));
 			forwardName = "success";
 		}
 		

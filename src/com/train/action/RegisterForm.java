@@ -1,5 +1,7 @@
 package com.train.action;
 
+import java.util.Arrays;
+
 import org.apache.struts.action.ActionForm;
 
 public class RegisterForm extends ActionForm{
@@ -9,6 +11,9 @@ public class RegisterForm extends ActionForm{
 	private String email, phone;
 	private String course[];
 	private String gender = "MALE";
+	private String remak;
+	private String countCourse;
+	
 	public String getSid() {
 		return sid;
 	}
@@ -63,6 +68,26 @@ public class RegisterForm extends ActionForm{
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	public String getRemak() {
+		return remak;
+	}
+	public void setRemak(String remak) {
+		this.remak = remak;
+	}
+	@Override
+	public String toString() {
+		return "RegisterForm [sid=" + sid + ", firstName=" + firstName + ", surName=" + surName + ", username="
+				+ username + ", password=" + password + ", email=" + email + ", phone=" + phone + ", course="
+				+ Arrays.toString(course) + ", gender=" + gender + ", remak=" + remak + "]";
+	}
+	public String getCountCourse() {
+		return countCourse;
+	}
+	public void setCountCourse(String countCourse) {
+		this.countCourse = countCourse;
+	}
+	
+	
 	
 	
 }

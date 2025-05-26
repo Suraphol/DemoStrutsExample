@@ -41,6 +41,12 @@
 			 </div>		
 		</div>
 		<div class="row">
+			<div>จำนวนหลักสูตร: </div>
+			<div>
+			<n:present name="registerForm" property="countCourse" ><b:write name="registerForm" property="countCourse"/></n:present>
+			 </div>		
+		</div>
+		<div class="row">
 			<h:submit>กลับฟอร์ม</h:submit>		
 		</div>
 	</div>
